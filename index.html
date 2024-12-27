@@ -4,120 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Theory Learning App</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Ensure this file path is correct -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">MusicMastery</div>
             <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#lessons">Lessons</a></li>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#shop">Shop</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lesson1.html">Lesson 1: What is Music?</a></li>
+                <li><a href="lesson2.html">Lesson 2: Notes and Scales</a></li>
             </ul>
-            <div class="auth-buttons">
-                <button id="login">Login</button>
-                <button id="signup">Sign Up</button>
-            </div>
         </nav>
     </header>
 
     <main>
-<button onclick="startLesson('1')">Start Lesson 1</button>
-<button onclick="startLesson('2')">Start Lesson 2</button>
-<button onclick="startLesson('3')">Start Lesson 3</button>
         <section id="home">
             <h1>Welcome to MusicMastery</h1>
             <p>Embark on your journey to master music theory from the basics to advanced concepts.</p>
             <button id="get-started">Get Started</button>
-        </section>
-
-        <section id="lessons">
-            <h2>Lessons</h2>
-            <div class="lesson-grid">
-                <div class="lesson-card">
-                    <h3>Lesson 1: What is Music?</h3>
-                    <p>Music is the organization of sound over time, including melody, harmony, and rhythm.</p>
-                    <button onclick="startLesson('lesson1')">Start Lesson</button>
-                </div>
-                <div class="lesson-card">
-                    <h3>Lesson 2: Notes and Scales</h3>
-                    <p>Notes are the building blocks of music. Scales are sequences of notes in a specific order.</p>
-                    <button onclick="startLesson('lesson2')">Start Lesson</button>
-                </div>
-                <div class="lesson-card">
-                    <h3>Lesson 3: Chords and Progressions</h3>
-                    <p>Chords are combinations of notes played together. Progressions are sequences of chords.</p>
-                    <button onclick="startLesson('lesson3')">Start Lesson</button>
-                </div>
-                <div class="lesson-card locked">
-                    <h3>Lesson 4: Advanced Harmony</h3>
-                    <p>Unlock by completing Lesson 3.</p>
-                    <button disabled>Locked</button>
-                </div>
-            </div>
-        </section>
-
-        <section id="lesson-content">
-            <h2>Lesson Content</h2>
-            <div id="lesson-details"></div>
-            <div id="lesson-quiz">
-                <h3>Quiz</h3>
-                <p>What is a chord?</p>
-                <button onclick="checkAnswer('chord')">A combination of notes</button>
-                <button onclick="checkAnswer('scale')">A sequence of notes</button>
-            </div>
-        </section>
-
-        <section id="profile">
-            <h2>User Profile</h2>
-            <div class="profile-info">
-                <img src="default-avatar.png" alt="User Avatar" class="avatar">
-                <p>Name: <span id="user-name">[Insert Name]</span></p>
-                <p>Friends: <span id="friend-count">0</span></p>
-                <button id="edit-profile">Edit Profile</button>
-            </div>
-            <div class="friend-requests">
-                <h3>Friend Requests</h3>
-                <ul id="friend-requests-list"></ul>
-            </div>
-        </section>
-
-        <section id="shop">
-            <h2>Shop</h2>
-            <div class="shop-items">
-                <div class="item">
-                    <p>Custom Avatar</p>
-                    <button>Buy - $5</button>
-                </div>
-                <div class="item">
-                    <p>Ad-Free Experience</p>
-                    <button>Upgrade to Premium - $10</button>
-                </div>
-            </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 MusicMastery. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script> <!-- Ensure this file path is correct -->
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
