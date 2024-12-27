@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* General Body Styling */
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -47,8 +45,6 @@ nav .auth-buttons button:hover {
     background-color: #3f51b5;
 }
 
-
-
 /* Footer Styling */
 footer {
     text-align: center;
@@ -93,7 +89,13 @@ h1, h2, h3 {
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s ease;
+
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
 }
+
 
 .lesson-card button:disabled {
     background-color: #ddd;
@@ -111,3 +113,35 @@ h1, h2, h3 {
 
 .lesson-grid {
     display
+
+
+.lesson-card h3 {
+    color: #333;
+}
+
+.lesson-card button {
+    background-color: #5c6bc0;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.lesson-card button:hover {
+    background-color: #3f51b5;
+}
+
+.lesson-card a {
+    text-decoration: none;
+}
+
+.lesson-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+/* Lesson Page */
+button {
+    margin-top: 10px;
+}
