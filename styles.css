@@ -47,43 +47,7 @@ nav .auth-buttons button:hover {
     background-color: #3f51b5;
 }
 
-/* Main Content Styling */
-main {
-    padding: 20px;
-}
 
-h1, h2, h3 {
-    color: #333;
-}
-
-.lesson-card {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-}
-
-.lesson-card h3 {
-    color: #333;
-}
-
-.lesson-card button {
-    background-color: #5c6bc0;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.lesson-card button:disabled {
-    background-color: #ddd;
-    cursor: not-allowed;
-}
-
-.lesson-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-}
 
 /* Footer Styling */
 footer {
@@ -95,3 +59,55 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    margin-bottom: 60px; /* To prevent footer from overlapping on scroll */
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.lesson-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s ease;
+}
+
+.lesson-card:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-card h3 {
+    color: #333;
+}
+
+.lesson-card button {
+    background-color: #5c6bc0;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.lesson-card button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.lesson-card button:hover {
+    background-color: #3f51b5;
+    transform: scale(1.05);
+}
+
+.lesson-card button:active {
+    transform: scale(0.95);
+}
+
+.lesson-grid {
+    display
