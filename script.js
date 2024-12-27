@@ -206,6 +206,12 @@ document.getElementById('edit-profile').addEventListener('click', function() {
 });
 
 
+// Redirect to the next lesson automatically
+function nextLessonRedirect() {
+    window.location.href = "lesson2.html";  // Modify this URL to go to the correct next lesson
+}
+
+
 
 
 
