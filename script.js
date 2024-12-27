@@ -1,8 +1,10 @@
 // Button to start lessons
+// Button to start lessons - Redirect to lesson page
 function startLesson(lessonId) {
-    alert('You have started ' + lessonId);
-    // You can add further functionality here, like loading lesson content dynamically.
+    const lessonUrl = `https://MusicTheoryApp.com/lesson${lessonId}`; // Redirect to new page for each lesson
+    window.location.href = lessonUrl; // Redirect to the new URL
 }
+
 
 // Quiz answer checking
 function checkAnswer(selectedAnswer) {
